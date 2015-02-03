@@ -14,5 +14,4 @@ login_form = page.forms.first
 login_form.username = "username"
 login_form.password = "password"
 redirect_page = agent.submit(login_form)
-p redirect_page.body
-
+p redirect_page.body.force_encoding("utf-8")
